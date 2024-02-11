@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import './globals.css'
-import Loading from './loading'
 
 import { Montserrat } from 'next/font/google'
 import { Suspense } from 'react'

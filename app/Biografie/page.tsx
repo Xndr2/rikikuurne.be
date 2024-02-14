@@ -5,18 +5,19 @@ import Divider from "../divider";
 import Link from "next/link";
 import Script from "next/script";
 import WIP from "../wip";
+import Footer from "../footer";
 
 export const metadata: Metadata = {
-  title: "Riki Kuurne | Startpagina",
-  description: "Riki Kuure Startpagina.",
+  title: "Riki Kuurne | Biografie",
+  description: "Riki Kuure Biografie.",
   icons: 'icons/eric_pfp.jpg',
 };
 
-export default function Home() {
+export default function Bio() {
   return (
     <>
-      <WIP/>
-      <Navbar pageName="Biografie"/>
+      <WIP />
+      <Navbar pageName="Biografie" />
       {/* main page content */}
       <main className="max-w-screen-xl mx-auto text-center h-full px-4">
         <div className="py-4">
@@ -25,7 +26,9 @@ export default function Home() {
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In provident at sequi dolorem natus officiis ex nobis voluptatibus accusantium itaque voluptates repudiandae, libero cupiditate cumque iste obcaecati totam quam quidem.</p>
           </header>
         </div>
+        <Footer />
       </main>
+
     </>
   );
 }

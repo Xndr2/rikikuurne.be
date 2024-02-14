@@ -4,7 +4,6 @@ import Navbar from "../navbar";
 import Divider from "../divider";
 import Link from "next/link";
 import Script from "next/script";
-import WIP from "../wip";
 import Footer from "../footer";
 
 export const metadata: Metadata = {
@@ -16,7 +15,6 @@ export const metadata: Metadata = {
 export default function Galerij() {
     return (
         <>
-            <WIP />
             <Navbar pageName="Galerij" />
             {/* main page content */}
             <main className="max-w-screen-xl mx-auto text-center h-full px-4">

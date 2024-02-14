@@ -52,7 +52,7 @@ export default function Navbar({
                             <div className="md:hidden w-full h-px border border-black dark:border-white my-2"></div>
 
                             <li>
-                                <a href="/" className="block py-2 px-3 rounded 00 md:p-0 text-black dark:text-white md:hover:underline" aria-current="page">Contact</a>
+                                <a href="Contact" className="block py-2 px-3 rounded 00 md:p-0 text-black dark:text-white md:hover:underline" aria-current="page">Contact</a>
                             </li>
                         </ul>
                     </div>

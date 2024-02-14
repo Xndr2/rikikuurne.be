@@ -27,11 +27,11 @@ export default function Bio() {
                     </header>
                     {/* mobile */}
                     <div className="hidden">
-                        <figure data-behold-id="j7tRJxCY9fyS1dM9ANM7">Gelieve de pagina te herladen indien je deze tekst kan zien.</figure>
+                        <figure data-behold-id="yK77sik8hPAolf79KX80">PC widget laad niet.</figure>
                     </div>
                     {/* pc */}
                     <div className="flex">
-                        <figure data-behold-id="WF8xAoftVsXDI9fCEHFz">Gelieve de pagina te herladen indien je deze tekst kan zien.</figure>
+                        <figure data-behold-id="JqE6fsi6kUXR9yZVLVP3">Mobile widget laad niet</figure>
                     </div>
                     <Script src="https://w.behold.so/widget.js" type="module" />
                 </div>

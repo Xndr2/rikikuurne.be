@@ -62,7 +62,7 @@ export default function Home() {
         <div className="py-4">
           <header className="mb-4">
             <h1 className="text-xl text-black dark:text-white font-semibold mb-2">Laatste Nieuws</h1>
-            <Link href="Nieuws" className=" border-2 border-black dark:border-white px-8 py-2 hover:text-xl">Meer &rarr;</Link>
+            <a href="Nieuws" className=" border-2 border-black dark:border-white px-8 py-2 hover:text-xl">Meer &rarr;</a>
           </header>
 
           <figure data-behold-id="UAkIjTZxmkpylMFcB6bG">Laatste Instagram Post. Gelieve de pagina te herladen indien je deze tekst kan zien.</figure>

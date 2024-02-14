@@ -26,12 +26,12 @@ export default function Bio() {
                         <Link href="Nieuws" className=" border-2 border-black dark:border-white px-8 py-2 hover:text-xl">Meer &rarr;</Link>
                     </header>
                     {/* mobile */}
-                    <div className="hidden">
-                        <figure data-behold-id="yK77sik8hPAolf79KX80">PC widget laad niet.</figure>
+                    <div className="flex md:hidden">
+                        <figure data-behold-id="JqE6fsi6kUXR9yZVLVP3">PC widget laad niet.</figure>
                     </div>
                     {/* pc */}
-                    <div className="flex">
-                        <figure data-behold-id="JqE6fsi6kUXR9yZVLVP3">Mobile widget laad niet</figure>
+                    <div className="hidden md:flex">
+                        <figure data-behold-id="yK77sik8hPAolf79KX80">Mobile widget laad niet</figure>
                     </div>
                     <Script src="https://w.behold.so/widget.js" type="module" />
                 </div>

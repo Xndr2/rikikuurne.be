@@ -17,7 +17,6 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <WIP />
       <Navbar pageName="Startpagina" />
       {/* main page content */}
       <main className="max-w-screen-xl mx-auto text-center h-full px-4">

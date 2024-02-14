@@ -26,11 +26,11 @@ export default function Bio() {
                         <Link href="Nieuws" className=" border-2 border-black dark:border-white px-8 py-2 hover:text-xl">Meer &rarr;</Link>
                     </header>
                     {/* mobile */}
-                    <div className="flex md:hidden">
+                    <div className="hidden">
                         <figure data-behold-id="j7tRJxCY9fyS1dM9ANM7">Gelieve de pagina te herladen indien je deze tekst kan zien.</figure>
                     </div>
                     {/* pc */}
-                    <div className="hidden md:flex">
+                    <div className="flex">
                         <figure data-behold-id="WF8xAoftVsXDI9fCEHFz">Gelieve de pagina te herladen indien je deze tekst kan zien.</figure>
                     </div>
                     <Script src="https://w.behold.so/widget.js" type="module" />

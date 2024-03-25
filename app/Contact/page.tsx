@@ -1,10 +1,10 @@
 import { Metadata } from "next";
 import Image from "next/image";
-import Navbar from "../navbar";
-import Divider from "../divider";
+import Navbar from "../Components/navbar";
+import Divider from "../Components/divider";
 import Link from "next/link";
 import Script from "next/script";
-import Footer from "../footer";
+import Footer from "../Components/footer";
 
 export const metadata: Metadata = {
     title: "Riki Kuurne | Contact",
@@ -21,7 +21,13 @@ export default function Bio() {
                 <div className="py-4">
                     <header>
                         <h1 className="text-xl text-black dark:text-white font-semibold">Contact</h1>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In provident at sequi dolorem natus officiis ex nobis voluptatibus accusantium itaque voluptates repudiandae, libero cupiditate cumque iste obcaecati totam quam quidem.</p>
+                        <p>Je kan mij bereiken via:</p>
+                        <ul>
+                            <li>Instagram:</li>
+                            <li>Email:</li>
+                            <li>Telefoon:</li>
+                            <li>Adres:</li>
+                        </ul>
                     </header>
                 </div>
                 <Footer />

@@ -1,14 +1,14 @@
 import { Metadata } from "next";
 import Image from "next/image";
-import Navbar from "../navbar";
-import Divider from "../divider";
+import Navbar from "../Components/navbar";
+import Divider from "../Components/divider";
 import Link from "next/link";
 import Script from "next/script";
-import Footer from "../footer";
+import Footer from "../Components/footer";
 
 export const metadata: Metadata = {
-    title: "Riki Kuurne | Nieuws",
-    description: "Riki Kuure Nieuws.",
+    title: "Riki | Nieuws",
+    description: "Riki Nieuws.",
     icons: 'icons/eric_pfp.jpg',
 };
 
@@ -21,7 +21,6 @@ export default function Bio() {
                 <div className="py-4 justify-center">
                     <header className="mb-4">
                         <h1 className="text-xl text-black dark:text-white font-semibold mb-2">Laatste Nieuws</h1>
-                        <Link href="Nieuws" className=" border-2 border-black dark:border-white px-8 py-2 hover:text-xl">Meer &rarr;</Link>
                     </header>
                     {/* mobile */}
                     <div className="flex md:hidden">

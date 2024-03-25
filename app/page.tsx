@@ -1,12 +1,11 @@
 import { Metadata } from "next";
 import Image from "next/image";
-import Navbar from "./navbar";
-import Divider from "./divider";
+import Navbar from "./Components/navbar";
+import Divider from "./Components/divider";
 import Link from "next/link";
 import Script from "next/script";
 import { Suspense } from "react";
-import WIP from "./wip";
-import Footer from "./footer";
+import Footer from "./Components/footer";
 
 export const metadata: Metadata = {
   title: "Riki Kuurne | Startpagina",

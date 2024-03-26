@@ -4,11 +4,6 @@ import Link from 'next/link';
 
 
 interface ExpoProps {
-    // slides: Array<{
-    //     src: string;
-    //     name: string;
-    //     description?: string;
-    // }>;
     expos: Array<{
         place: string;
     }>;

@@ -15,8 +15,8 @@ export const metadata: Metadata = {
 export default function Footer() {
     return (
         <>
-            {/* footer */}
-            <main className="mx-auto text-center h-full">
+            {/* footer mx-auto text-center h-full*/}
+            <main className="relative bottom-0 w-full text-center">
                 <Divider />
                 <div className="py-4">
                     <p>&copy; Copyright 2024 <Link href="/" className="hover:underline">rikikuurne.be</Link></p>

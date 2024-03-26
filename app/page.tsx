@@ -22,7 +22,10 @@ export default function Home() {
         <div className="py-4">
           <header>
             <h1 className="text-xl text-black dark:text-white font-semibold">Welkom</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In provident at sequi dolorem natus officiis ex nobis voluptatibus accusantium itaque voluptates repudiandae, libero cupiditate cumque iste obcaecati totam quam quidem.</p>
+            <p className="text-left text-pretty">
+              Voor Eric staat een idee van een kunstenaar aan het begin van een proces.
+              Het visualiseren komt tot stand dankzij de persoonlijkheid, de creativiteit en de vakkennis van de kunstenaar.
+            </p>
           </header>
 
           <div className="flex flex-wrap justify-between mt-4">

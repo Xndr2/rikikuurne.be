@@ -38,6 +38,16 @@ export default function Bio() {
                         </p>
                         <Links links={links} />
                     </header>
+
+                    <Divider />
+
+                    <Image
+                        src="/google_maps.png"
+                        width={1770}
+                        height={917}
+                        className=" h-auto w-auto m-auto mt-4"
+                        alt="riki woonplaats"
+                    />
                 </div>
                 <Footer />
             </main>

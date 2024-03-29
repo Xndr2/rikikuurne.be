@@ -28,7 +28,7 @@ export default function Bio() {
             <main className="max-w-screen-xl mx-auto text-center h-full px-4">
                 <div className="py-4">
                     <header>
-                        <h1 className="text-xl text-black dark:text-white font-semibold">Contact</h1>
+                        <h1 className="text-xl font-semibold">Contact</h1>
                         <p className=" text-pretty text-left">
                             Neem gerust contact met me op als je vragen hebt, geïnteresseerd bent in mijn kunstwerken, of wilt zien wat er momenteel beschikbaar is.
                             <br /><br />

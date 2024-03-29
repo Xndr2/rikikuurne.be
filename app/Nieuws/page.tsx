@@ -12,15 +12,15 @@ export const metadata: Metadata = {
     icons: 'icons/eric_pfp.jpg',
 };
 
-export default function Bio() {
+export default function Nieuws() {
     return (
         <>
             <Navbar pageName="Nieuws" />
             {/* main page content */}
             <main className="max-w-screen-xl mx-auto text-center h-full px-4">
                 <div className="py-4 justify-center">
-                    <header className="mb-4">
-                        <h1 className="text-xl text-black dark:text-white font-semibold mb-2">Laatste Nieuws</h1>
+                    <header className="">
+                        <h1 className="text-xl font-semibold mb-2">Laatste Nieuws</h1>
                     </header>
                     {/* mobile */}
                     <div className="flex md:hidden">

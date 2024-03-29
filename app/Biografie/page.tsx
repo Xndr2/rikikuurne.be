@@ -51,9 +51,9 @@ export default function Bio() {
       <Navbar pageName="Biografie" />
       {/* main page content */}
       <main className="max-w-screen-xl mx-auto h-full px-4">
-        <div className="py-4">
+        <div className="">
           <header>
-            <h1 className="text-xl text-black dark:text-white font-semibold text-center">Biografie</h1>
+            <h1 className="text-xl font-semibold text-center">Biografie</h1>
             <p className="text-pretty">
               Eric Vacquier, alias Riki, bewijst, voor zover dat nodig mocht zijn, dat je, ook zonder academische vorming, een bezield kunstenaar kan zijn.
               <br /><br />
@@ -86,13 +86,13 @@ export default function Bio() {
           <div className="grid grid-cols-1 gap-2 md:grid-cols-3">
             <div>
               {/* Actief in */}
-              <h1 className="text-xl text-black dark:text-white font-semibold text-center mb-4">Actief in</h1>
+              <h1 className="text-xl font-semibold text-center mb-2">Actief in</h1>
               <WorkText />
             </div>
 
             <div>
               {/* Tentoonstellingen */}
-              <h1 className="text-xl text-black dark:text-white font-semibold text-center mt-4 md:mt-0">Tentoonstellingen</h1>
+              <h1 className="text-xl font-semibold text-center mt-4 md:mt-0">Tentoonstellingen</h1>
               <p className="text-center mb-4">Vanaf 1948 tot heden</p>
               {/* auto add all expos from list at begining of function */}
               <Expos expos={expos} />
@@ -100,7 +100,7 @@ export default function Bio() {
 
             <div>
               {/* Verenigingen */}
-              <h1 className="text-xl text-black dark:text-white font-semibold text-center my-4 md:mt-0">Verenigingen</h1>
+              <h1 className="text-xl font-semibold text-center my-4 md:mt-0">Verenigingen</h1>
               <Verenigingen />
             </div>
           </div>

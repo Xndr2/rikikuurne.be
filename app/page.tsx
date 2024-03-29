@@ -21,7 +21,7 @@ export default function Home() {
       <main className="max-w-screen-xl mx-auto text-center h-full px-4">
         <div className="py-4">
           <header>
-            <h1 className="text-xl text-black dark:text-white font-semibold">Welkom</h1>
+            <h1 className="text-xl text-black font-semibold">Welkom</h1>
             <p className="text-left text-pretty">
               Voor Eric staat een idee van een kunstenaar aan het begin van een proces.
               Het visualiseren komt tot stand dankzij de persoonlijkheid, de creativiteit en de vakkennis van de kunstenaar.
@@ -62,8 +62,8 @@ export default function Home() {
 
         <div className="py-4">
           <header className="mb-4">
-            <h1 className="text-xl text-black dark:text-white font-semibold mb-2">Laatste Nieuws</h1>
-            <a href="Nieuws" className=" border-2 border-black dark:border-white px-8 py-2 hover:text-xl">Meer &rarr;</a>
+            <h1 className="text-xl font-semibold mb-2">Laatste Nieuws</h1>
+            <a href="Nieuws" className=" border-2 border-black px-8 py-2 hover:text-xl">Meer &rarr;</a>
           </header>
 
           <figure data-behold-id="UAkIjTZxmkpylMFcB6bG">Laatste Instagram Post. Gelieve de pagina te herladen indien je deze tekst kan zien.</figure>

@@ -6,6 +6,8 @@ import Link from "next/link";
 import Script from "next/script";
 import { Suspense } from "react";
 import Footer from "./Components/footer";
+import bg from "../public/background.jpg"
+import { url } from "inspector";
 
 export const metadata: Metadata = {
   title: "Riki Kuurne | Startpagina",
@@ -16,15 +18,14 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <Navbar pageName="Startpagina" />
       {/* main page content */}
       <main className="max-w-screen-xl mx-auto text-center h-full px-4">
+        <Navbar pageName="Startpagina" />
         <div className="py-4">
           <header>
             <h1 className="text-xl text-black font-semibold">Welkom</h1>
-            <p className="text-left text-pretty">
-              Voor Eric staat een idee van een kunstenaar aan het begin van een proces.
-              Het visualiseren komt tot stand dankzij de persoonlijkheid, de creativiteit en de vakkennis van de kunstenaar.
+            <p className="text-center text-pretty">
+              Zoals superlatieven een verhaal levendiger maken, zo maken fantasie, vormen, lijnenspel en kleuren mijn werk levendiger.
             </p>
           </header>
 

@@ -8,6 +8,7 @@ import Image from "next/image"
 import SliderImg1 from "@/public/home_images/clochard.jpg"
 import SliderImg2 from "@/public/home_images/heks.jpg"
 import SliderImg3 from "@/public/home_images/spitsbroeders.jpg"
+import { calculateOverrideValues } from "next/dist/server/font-utils"
 
 const animation = { duration: 25000, easing: (t: any) => t }
 
@@ -74,28 +75,28 @@ export default function Slider() {
                     </>
                 )}
                 <div ref={sliderRef} className="keen-slider">
-                    <div className="keen-slider__slide number-slide1">
-                        <p className="text-center font-bold">Titel 1</p>
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mx-4">
+                    <div className="keen-slider__slide number-slide1 max-w-screen-sm">
+                        <p className="text-center font-bold max-w-max mx-auto">Titel 1</p>
+                        <div className="grid grid-cols-1 md:grid-cols-3 md:gap-4 max-w-max">
                             <Image src={SliderImg1} width={SliderImg1.width} height={SliderImg1.height} alt="image" className="h-auto mx-auto" />
-                            <Image src={SliderImg1} width={SliderImg1.width} height={SliderImg1.height} alt="image" className="h-auto mx-auto hidden md:block" />
-                            <Image src={SliderImg1} width={SliderImg1.width} height={SliderImg1.height} alt="image" className="h-auto mx-auto hidden md:block" />
+                            <Image src={SliderImg1} width={SliderImg1.width} height={SliderImg1.height} alt="image" className="h-max mx-auto hidden md:block" />
+                            <Image src={SliderImg1} width={SliderImg1.width} height={SliderImg1.height} alt="image" className="h-max mx-auto hidden md:block" />
                         </div>
                     </div>
                     <div className="keen-slider__slide number-slide2">
                         <p className="text-center font-bold">Titel 2</p>
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mx-4">
-                            <Image src={SliderImg2} width={SliderImg2.width} height={SliderImg2.height} alt="image" className="h-auto mx-auto" />
-                            <Image src={SliderImg2} width={SliderImg2.width} height={SliderImg2.height} alt="image" className="h-auto mx-auto hidden md:block" />
-                            <Image src={SliderImg2} width={SliderImg2.width} height={SliderImg2.height} alt="image" className="h-auto mx-auto hidden md:block" />
+                        <div className="grid grid-cols-1 md:grid-cols-3 md:gap-4 max-w-max">
+                            <Image src={SliderImg2} width={SliderImg2.width} height={SliderImg2.height} alt="image" className="h-max mx-auto" />
+                            <Image src={SliderImg2} width={SliderImg2.width} height={SliderImg2.height} alt="image" className="h-max mx-auto hidden md:block" />
+                            <Image src={SliderImg2} width={SliderImg2.width} height={SliderImg2.height} alt="image" className="h-max mx-auto hidden md:block" />
                         </div>
                     </div>
                     <div className="keen-slider__slide number-slide3">
                         <p className="text-center font-bold">Titel 3</p>
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mx-4">
-                            <Image src={SliderImg3} width={SliderImg3.width} height={SliderImg3.height} alt="image" className="h-auto mx-auto" />
-                            <Image src={SliderImg3} width={SliderImg3.width} height={SliderImg3.height} alt="image" className="h-auto mx-auto hidden md:block" />
-                            <Image src={SliderImg3} width={SliderImg3.width} height={SliderImg3.height} alt="image" className="h-auto mx-auto hidden md:block" />
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-amx">
+                            <Image src={SliderImg3} width={SliderImg3.width} height={SliderImg3.height} alt="image" className="h-max mx-auto" />
+                            <Image src={SliderImg3} width={SliderImg3.width} height={SliderImg3.height} alt="image" className="h-max mx-auto hidden md:block" />
+                            <Image src={SliderImg3} width={SliderImg3.width} height={SliderImg3.height} alt="image" className="h-max mx-auto hidden md:block" />
                         </div>
                     </div>
                 </div>
@@ -113,7 +114,7 @@ export default function Slider() {
                         />
                     </>
                 )}
-            </div>
+            </div >
         </>
     )
 }
@@ -122,7 +123,7 @@ function Arrow(props: any) {
     return (
         <svg
             onClick={props.onClick}
-            className={`h-8 inline-block hover:fill-slate-700`}
+            className={`h-8 hidden md:block hover:fill-slate-700`}
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
         >

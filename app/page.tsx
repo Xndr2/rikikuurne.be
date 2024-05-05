@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import React, { useState } from "react"
 import Image from "next/image";
 import Navbar from "./Components/navbar";
 import Divider from "./Components/divider";
@@ -8,6 +9,8 @@ import { Suspense } from "react";
 import Footer from "./Components/footer";
 import bg from "../public/background.jpg"
 import { url } from "inspector";
+import Slider from "./Components/slider";
+
 
 export const metadata: Metadata = {
   title: "Riki Kuurne | Startpagina",
@@ -29,42 +32,15 @@ export default function Home() {
             </p>
           </header>
 
-          <div className="flex flex-wrap justify-between mt-4">
-            <Suspense fallback={<p>Loading Image...</p>}>
-              <Image
-                src="/home_images/clochard.jpg"
-                width={834}
-                height={1000}
-                className=" w-full md:w-1/3 p-2 h-auto"
-                alt="clochard"
-                loading="lazy"
-              />
-            </Suspense>
-            <Image
-              src="/home_images/heks.jpg"
-              width={834}
-              height={1000}
-              className=" w-1/3 p-2 h-auto hidden md:block"
-              alt="heks"
-              loading="lazy"
-            />
-            <Image
-              src="/home_images/spitsbroeders.jpg"
-              width={834}
-              height={1000}
-              className=" w-1/3 p-2 h-auto hidden md:block"
-              alt="spitsbroeders"
-              loading="lazy"
-            />
-          </div>
+          <Slider />
         </div>
 
         <Divider />
 
         <div className="py-4">
-          <header className="mb-4">
-            <h1 className="text-xl font-semibold mb-2">Laatste Nieuws</h1>
-            <a href="Nieuws" className=" border-2 border-black px-8 py-2 hover:text-xl">Meer &rarr;</a>
+          <header className="mb-4 flex items-center justify-center font-semibold">
+            <h1 className="text-xl mb-2 mr-2">Laatste Nieuws</h1>
+            <a href="Nieuws" className="border-2 border-black px-8 py-2 hover:text-xl ml-2">Meer &rarr;</a>
           </header>
 
           <figure data-behold-id="UAkIjTZxmkpylMFcB6bG">Laatste Instagram Post. Gelieve de pagina te herladen indien je deze tekst kan zien.</figure>

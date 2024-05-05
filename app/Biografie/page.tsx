@@ -93,7 +93,7 @@ export default function Bio() {
             <div>
               {/* Tentoonstellingen */}
               <h1 className="text-xl font-semibold text-center mt-4 md:mt-0">Tentoonstellingen</h1>
-              <p className="text-center mb-4">Vanaf 1948 tot heden</p>
+              <p className="text-center mb-4">Vanaf 1984 tot heden</p>
               {/* auto add all expos from list at begining of function */}
               <Expos expos={expos} />
             </div>

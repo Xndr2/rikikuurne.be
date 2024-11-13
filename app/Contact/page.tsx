@@ -4,7 +4,6 @@ import Navbar from "../Components/navbar";
 import Divider from "../Components/divider";
 import Link from "next/link";
 import Script from "next/script";
-import Footer from "../Components/footer";
 import Links from "../Components/Contact/link";
 
 export const metadata: Metadata = {
@@ -49,7 +48,6 @@ export default function Bio() {
                         alt="riki woonplaats"
                     />
                 </div>
-                <Footer />
             </main>
 
         </>

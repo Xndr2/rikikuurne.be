@@ -4,7 +4,6 @@ import Navbar from "../Components/navbar";
 import Divider from "../Components/divider";
 import Link from "next/link";
 import Script from "next/script";
-import Footer from "../Components/footer";
 import Expos from "../Components/Biografie/expos";
 import Verenigingen from "../Components/Biografie/verenigingen";
 import WorkText from "../Components/Biografie/WorkText";
@@ -105,7 +104,6 @@ export default function Bio() {
             </div>
           </div>
         </div>
-        <Footer />
       </main>
 
     </>

@@ -6,7 +6,6 @@ import Divider from "./Components/divider";
 import Link from "next/link";
 import Script from "next/script";
 import { Suspense } from "react";
-import Footer from "./Components/footer";
 import bg from "../public/background.jpg"
 import { url } from "inspector";
 import Slider from "./Components/slider";
@@ -46,8 +45,6 @@ export default function Home() {
           <figure data-behold-id="UAkIjTZxmkpylMFcB6bG">Laatste Instagram Post. Gelieve de pagina te herladen indien je deze tekst kan zien.</figure>
           <Script src="https://w.behold.so/widget.js" type="module" />
         </div>
-
-        <Footer />
       </main>
     </>
   );

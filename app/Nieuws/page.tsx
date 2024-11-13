@@ -4,7 +4,6 @@ import Navbar from "../Components/navbar";
 import Divider from "../Components/divider";
 import Link from "next/link";
 import Script from "next/script";
-import Footer from "../Components/footer";
 
 export const metadata: Metadata = {
     title: "Riki | Nieuws",
@@ -32,7 +31,6 @@ export default function Nieuws() {
                     </div>
                     <Script src="https://w.behold.so/widget.js" type="module" />
                 </div>
-                <Footer />
             </main>
 
         </>

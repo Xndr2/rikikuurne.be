@@ -37,9 +37,9 @@ const folders = [
 const Galerij: React.FC = () => {
     return (
         <>
-            <Navbar pageName="Galerij" />
             {/* main page content */}
-            <main className="max-w-screen-xl mx-auto text-center h-full px-4">
+            <main className="text-center">
+                <Navbar pageName="Galerij" />
                 <div className="py-4 justify-center">
                     <header className="mb-4">
                         <h1 className="text-xl text-black font-semibold mb-2">Galerij</h1>

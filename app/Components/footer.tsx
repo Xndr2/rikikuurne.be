@@ -16,9 +16,9 @@ export default function Footer() {
     return (
         <>
             {/* footer mx-auto text-center h-full*/}
-            <main className="relative bottom-0 w-full text-center">
+            <main className="text-center relative bottom-0 w-full">
                 <Divider />
-                <div className="py-4">
+                <div className="pb-4">
                     <p>&copy; Copyright 2024 <Link href="/" className="hover:underline">rikikuurne.be</Link></p>
                     <p>Alle rechten voorbehouden</p>
                 </div>

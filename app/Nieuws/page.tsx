@@ -14,12 +14,15 @@ export const metadata: Metadata = {
 export default function Nieuws() {
     return (
         <>
-            <Navbar pageName="Nieuws" />
             {/* main page content */}
-            <main className="max-w-screen-xl mx-auto text-center h-full px-4">
+            <main className="text-center">
+                <Navbar pageName="Nieuws" />
                 <div className="py-4 justify-center">
-                    <header className="">
-                        <h1 className="text-xl font-semibold mb-2">Laatste Nieuws</h1>
+                    <header className="mb-2">
+                        <h1 className="text-xl font-semibold">Laatste Nieuws</h1>
+                        <h1 className="text-pretty text-sm">
+                            Via <Link key="" target='_blank' href="https://www.instagram.com/eric.vacquier.riki.kuurne/" className="hover:underline">Instagram</Link>
+                        </h1>
                     </header>
                     {/* mobile */}
                     <div className="flex md:hidden">

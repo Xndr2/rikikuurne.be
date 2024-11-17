@@ -15,16 +15,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body className={montserrat.className}>
-      <div className="min-h-screen flex flex-col">
+      <div className="max-w-screen-xl mx-auto px-4 min-h-screen flex flex-col">
         {/* Main content */}
         <main className="flex-grow">
           {children}
         </main>
         
         {/* Footer */}
-        <div className='px-4'>
-          <Footer />
-        </div>
+        <Footer />
       </div>
       </body>
     </html>

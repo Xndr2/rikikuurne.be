@@ -47,10 +47,10 @@ export default function Bio() {
 
   return (
     <>
-      <Navbar pageName="Biografie" />
       {/* main page content */}
-      <main className="max-w-screen-xl mx-auto h-full px-4">
-        <div className="">
+      <main className="text-center">
+        <Navbar pageName="Biografie" />
+        <div className="py-4">
           <header>
             <h1 className="text-xl font-semibold text-center">Biografie</h1>
             <p className="text-pretty">
@@ -74,24 +74,24 @@ export default function Bio() {
               De werken van Riki getuigen van een grote vakbekwaamheid en een geduldig manipuleren van de materie.
             </p>
 
-            <p className="mt-8 mb-2 text-pretty font-thin text-sm text-center">
-              Een aantal werken behoren tot openbare verzamelingen.
+            <p className="mt-8 mb-2 text-pretty text-sm text-center">
+              Een aantal werken behoren tot een openbare verzamelingen.
               <br />
-              Meerdere werken bevinden zich in private verzamelingen.
+              Meerdere werken bevinden zich in een private verzamelingen.
             </p>
           </header>
 
           <Divider />
-          <div className="grid grid-cols-1 gap-2 md:grid-cols-3">
+          <div className="flex flex-col gap-16 md:flex-row justify-between mx-4">
             <div>
               {/* Actief in */}
-              <h1 className="text-xl font-semibold text-center mb-2">Actief in</h1>
+              <h1 className="text-xl font-semibold text-center">Actief in</h1>
               <WorkText />
             </div>
 
             <div>
               {/* Tentoonstellingen */}
-              <h1 className="text-xl font-semibold text-center mt-4 md:mt-0">Tentoonstellingen</h1>
+              <h1 className="text-xl font-semibold text-center">Tentoonstellingen</h1>
               <p className="text-center mb-4">Vanaf 1984 tot heden</p>
               {/* auto add all expos from list at begining of function */}
               <Expos expos={expos} />
@@ -99,7 +99,7 @@ export default function Bio() {
 
             <div>
               {/* Verenigingen */}
-              <h1 className="text-xl font-semibold text-center my-4 md:mt-0">Verenigingen</h1>
+              <h1 className="text-xl font-semibold text-center">Verenigingen</h1>
               <Verenigingen />
             </div>
           </div>

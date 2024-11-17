@@ -21,6 +21,12 @@ export default function Expos(props: ExpoProps) {
                     <span className="ml-1">{expo.place}</span>
                 </li>
             ))}
+            <li key="" className="flex items-center col-span-2 md:col-span-3">
+                <svg key="" className="flex-shrink-0 w-3.5 h-3.5 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+                    <path stroke="currentColor" d="M1 5.917 5.724 10.5 15 1.5" />
+                </svg>
+                <span className="ml-1">Exclusieve Vernissage bij <Link key="" target='_blank' className="hover:underline" href="https://www.verthe-interieurs.be/en/nieuws/exclusieve-vernissage-van-riki-crien/">Verthe</Link></span>
+            </li>
         </ul >
     );
 }

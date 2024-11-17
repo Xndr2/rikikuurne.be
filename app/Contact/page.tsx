@@ -16,15 +16,16 @@ export default function Bio() {
     let links = [
         { name: "Instagram", icon: "/icons/contact/instagram.svg", link: "https://www.instagram.com/eric.vacquier.riki.kuurne/", linkName: "@eric.vacquier.riki.kuurne" },
         { name: "Email", icon: "/icons/contact/envelope-solid.svg", link: "mailto:info@rikikuurne.be", linkName: "info@rikikuurne.be" },
-        { name: "Telefoon", icon: "/icons/contact/phone-solid.svg", link: "tel:+32", linkName: "ChangeMe" },
+        { name: "GSM", icon: "/icons/contact/phone-solid.svg", link: "tel:+32", linkName: "ChangeMe" },
         { name: "Vaste Telefoon", icon: "/icons/contact/phone-solid.svg", link: "tel:+32", linkName: "ChangeMe" },
         { name: "Adres", icon: "/icons/contact/location-dot-solid.svg", link: "https://www.google.com/maps/place/Najaarsweg+40,+8520+Kuurne/@50.8600234,3.2819948,18.82z/data=!4m6!3m5!1s0x47c33bb78526ff05:0xc9d6c25f71ae4038!8m2!3d50.8599457!4d3.2824684!16s%2Fg%2F11sc2pzncb?entry=ttu", linkName: "Najaarsweg 40, 8520 Kuurne" },
+        { name: "Exclusieve Vernissage, Verthe", icon: "/icons/contact/location-dot-solid.svg", link: "https://www.verthe-interieurs.be/en/nieuws/exclusieve-vernissage-van-riki-crien/", linkName: "Gentsestraat 46, 8530 Harelbeke" },
     ]
     return (
         <>
-            <Navbar pageName="Contact" />
             {/* main page content */}
-            <main className="max-w-screen-xl mx-auto text-center h-full px-4">
+            <main className="text-center">
+                <Navbar pageName="Contact" />
                 <div className="py-4">
                     <header>
                         <h1 className="text-xl font-semibold">Contact</h1>

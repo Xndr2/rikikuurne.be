@@ -15,7 +15,7 @@ interface LinkProps {
 export default function Links(props: LinkProps) {
     const { links } = props;
     return (
-        <div key="" className="grid grid-cols-1 md:grid-cols-3 gap-4 md:w-max m-auto my-4">
+        <div key="" className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 w-max m-auto my-4">
             {links.map((l) => (
                 <Link key="" target='_blank' href={l.link} className="flex items-center text-left border-2 border-black rounded-lg p-2 hover:border-blue-300">
                     <Image

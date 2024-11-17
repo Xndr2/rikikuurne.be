@@ -21,7 +21,7 @@ export default function Home() {
   return (
     <>
       {/* main page content */}
-      <main className="max-w-screen-xl mx-auto text-center h-full px-4">
+      <main className="text-center">
         <Navbar pageName="Startpagina" />
         <div className="py-4">
           <header>
@@ -36,10 +36,10 @@ export default function Home() {
 
         <Divider />
 
-        <div className="py-4">
-          <header className="mb-4 flex items-center justify-center font-semibold">
-            <h1 className="text-xl mb-2 mr-2">Laatste Nieuws</h1>
-            <a href="Nieuws" className="border-2 border-black px-8 py-2 hover:text-xl ml-2">Meer &rarr;</a>
+        <div className="">
+          <header className="mb-4 flex flex-col items-center justify-center font-semibold">
+            <h1 className="text-xl mr-2">Laatste Nieuws</h1>
+            <a href="Nieuws" className="hover:underline">Meer &rarr;</a>
           </header>
 
           <figure data-behold-id="UAkIjTZxmkpylMFcB6bG">Laatste Instagram Post. Gelieve de pagina te herladen indien je deze tekst kan zien.</figure>

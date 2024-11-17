@@ -13,7 +13,7 @@ export default function Navbar({
     return (
         <>
             <nav>
-                <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto pt-4 px-4">
+                <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto pt-4">
                     <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
                         <Image
                             src="/icons/eric_pfp2.jpg"
@@ -22,7 +22,7 @@ export default function Navbar({
                             className="h-auto w-20"
                             alt="riki Logo"
                         />
-                        <span className="self-center text-lg md:text-2xl whitespace-nowrap">Riki | {pageName}</span>
+                        <span className="self-center text-base md:text-xl whitespace-nowrap">Riki | {pageName}</span>
                     </a>
                     <HamburgerMenu />
                     <div className="hidden w-full md:block md:w-auto NavbarClass" id="navbar-default">

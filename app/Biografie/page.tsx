@@ -43,6 +43,8 @@ export default function Bio() {
     { place: "Nazareth" },
     { place: "Wakken" },
     { place: "Zwevegem" },
+    { place: "Heule" },
+    { place: "Drongen" },
   ]
 
   return (

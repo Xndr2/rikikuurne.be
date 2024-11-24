@@ -27,7 +27,7 @@ export default function Home() {
           <header>
             <h1 className="text-xl text-black font-semibold">Welkom</h1>
             <p className="text-center text-pretty">
-              Zoals superlatieven een verhaal levendiger maken, zo maken fantasie, vormen, lijnenspel en kleuren mijn werk levendiger.
+              Zoals superlatieven een verhaal levendiger maken, zo maken fantasie, vormen, lijnen en kleuren mijn werk levendiger.
             </p>
           </header>
 

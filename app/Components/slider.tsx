@@ -5,9 +5,17 @@ import { useKeenSlider, KeenSliderPlugin } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
 import Image from "next/image"
 
-import SliderImg1 from "@/public/home_images/clochard.jpg"
-import SliderImg2 from "@/public/home_images/heks.jpg"
-import SliderImg3 from "@/public/home_images/spitsbroeders.jpg"
+import SliderImg11 from "@/public/home_images/1/Twijfelaar 85 x 80cm.jpg"
+import SliderImg12 from "@/public/home_images/1/Spitsbroeders 60 x 50cm.jpg"
+import SliderImg13 from "@/public/home_images/1/Amazone 78cm x 35cm.jpg"
+
+import SliderImg21 from "@/public/home_images/2/Bankzitters 1m x 50cm.jpg"
+import SliderImg22 from "@/public/home_images/2/Caroussel 1.60m x 1m.jpg"
+
+import SliderImg31 from "@/public/home_images/3/Mijmeraar 1m x 40cm.jpg"
+import SliderImg32 from "@/public/home_images/3/Twee eentjes 1m x 40cm.jpg"
+import SliderImg33 from "@/public/home_images/3/Violist 96 x 50cm.jpg"
+
 import { calculateOverrideValues } from "next/dist/server/font-utils"
 
 const ResizePlugin: KeenSliderPlugin = (slider) => {
@@ -56,29 +64,28 @@ export default function Slider() {
         )}
         <div ref={sliderRef} className="keen-slider">
           <div className="keen-slider__slide flex flex-col text-center">
-            <h1 className="w-max mx-auto mb-4 font-bold">Title 1</h1>
+            <h1 className="w-max mx-auto mb-4 font-bold">Polystyreen/Isomo beelden</h1>
             <div className="flex justify-between gap-4 mx-auto">
-                <Image src={SliderImg1} width={SliderImg1.width} height={SliderImg1.height} alt="image" className="w-auto md:w-1/3 object-cover" />
-                <Image src={SliderImg1} width={SliderImg1.width} height={SliderImg1.height} alt="image" className="w-1/3 object-cover hidden md:block" />
-                <Image src={SliderImg1} width={SliderImg1.width} height={SliderImg1.height} alt="image" className="w-1/3 object-cover hidden md:block" />
+                <Image src={SliderImg11} width={SliderImg11.width} height={SliderImg11.height} alt="image" className="w-auto md:w-1/3 object-cover" />
+                <Image src={SliderImg12} width={SliderImg12.width} height={SliderImg12.height} alt="image" className="w-1/3 object-cover hidden md:block" />
+                <Image src={SliderImg13} width={SliderImg13.width} height={SliderImg13.height} alt="image" className="w-1/3 object-cover hidden md:block" />
             </div>
           </div>
           
           <div className="keen-slider__slide flex flex-col text-center">
-            <h1 className="w-max mx-auto mb-4 font-bold">Title 2</h1>
+            <h1 className="w-max mx-auto mb-4 font-bold">Schilderijen op hout</h1>
             <div className="flex justify-between gap-4 mx-auto">
-                <Image src={SliderImg2} width={SliderImg2.width} height={SliderImg2.height} alt="image" className="w-auto md:w-1/3 object-cover" />
-                <Image src={SliderImg2} width={SliderImg2.width} height={SliderImg2.height} alt="image" className="w-1/3 object-cover hidden md:block" />
-                <Image src={SliderImg2} width={SliderImg2.width} height={SliderImg2.height} alt="image" className="w-1/3 object-cover hidden md:block" />
+                <Image src={SliderImg21} width={SliderImg21.width} height={SliderImg21.height} alt="image" className="w-auto  object-cover hidden md:block" />
+                <Image src={SliderImg22} width={SliderImg22.width} height={SliderImg22.height} alt="image" className="w-1/3 object-cover block md:hidden" />
             </div>
           </div>
 
           <div className="keen-slider__slide flex flex-col text-center">
-            <h1 className="w-max mx-auto mb-4 font-bold">Title 3</h1>
+            <h1 className="w-max mx-auto mb-4 font-bold">Metaal/Hout beelden</h1>
             <div className="flex justify-between gap-4 mx-auto">
-                <Image src={SliderImg3} width={SliderImg3.width} height={SliderImg3.height} alt="image" className="w-auto md:w-1/3 object-cover" />
-                <Image src={SliderImg3} width={SliderImg3.width} height={SliderImg3.height} alt="image" className="w-1/3 object-cover hidden md:block" />
-                <Image src={SliderImg3} width={SliderImg3.width} height={SliderImg3.height} alt="image" className="w-1/3 object-cover hidden md:block" />
+                <Image src={SliderImg31} width={SliderImg31.width} height={SliderImg31.height} alt="image" className="w-auto md:w-1/3 object-cover" />
+                <Image src={SliderImg32} width={SliderImg32.width} height={SliderImg32.height} alt="image" className="w-1/3 object-cover hidden md:block" />
+                <Image src={SliderImg33} width={SliderImg33.width} height={SliderImg33.height} alt="image" className="w-1/3 object-cover hidden md:block" />
             </div>
           </div>
         </div>

@@ -5,7 +5,7 @@ import Link from 'next/link';
 export default function Verenigingen() {
 
     let vers = [
-        { group: 'Kuurnse Kunstkring “Evarist Carpentier”' },
+        { group: 'Kuurnse Kunstkring “Evariste Carpentier”' },
         {
             group: 'Gezel Europese Kunstverdienste', sub: [
                 "Goud en Gouden Palm 2007",

@@ -7,7 +7,7 @@ export default function WorkText() {
     let workText = [
         { name: "Sculpturen" },
         {
-            name: "Tekenen", sub: [
+            name: "Tekeningen", sub: [
                 "publicitaire ontwerpen",
                 "stripverhalen",
                 "cartoons",
@@ -16,7 +16,7 @@ export default function WorkText() {
             ]
         },
         {
-            name: "Schilderen", sub: [
+            name: "Schilderijen", sub: [
                 "aquarel",
                 "olieverf"
             ]

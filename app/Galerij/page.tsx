@@ -154,6 +154,7 @@ const Galerij: React.FC = () => {
                 <div className="py-4 justify-center">
                     <header className="mb-4">
                         <h1 className="text-xl text-black font-semibold mb-2">Galerij</h1>
+                        <p>Klik op een categorie om deze te bekijken.<br/><span className="font-semibold">Het kan een paar seconden duren voor alle foto&apos;s zijn geladen.</span></p>
                     </header>
                 </div>
                 <ImageGallery folders={folders} />

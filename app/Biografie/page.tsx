@@ -55,7 +55,7 @@ export default function Bio() {
         <div className="py-4">
           <header>
             <h1 className="text-xl font-semibold text-center">Biografie</h1>
-            <p className="text-pretty">
+            <p className="text-pretty text-left">
               Eric Vacquier, alias Riki, bewijst, voor zover dat nodig mocht zijn, dat je, ook zonder academische vorming, een bezield kunstenaar kan zijn.
               <br /><br />
               Voor Eric staat een idee van een kunstenaar aan het begin van een proces.

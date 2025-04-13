@@ -72,6 +72,7 @@ export default function Slider() {
                   src={SliderImg11}
                   alt="image"
                   className="object-cover w-full h-full"
+                  unoptimized={true}
                 />
               </div>
               <div className="hidden md:block w-1/3 aspect-[2/3] overflow-hidden">

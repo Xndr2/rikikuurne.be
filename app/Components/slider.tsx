@@ -67,8 +67,12 @@ export default function Slider() {
           <div className="keen-slider__slide flex flex-col text-center">
             <h1 className="w-max mx-auto mb-4 font-bold">Polystyreen/Isomo beelden</h1>
             <div className="flex justify-center md:justify-between gap-4 mx-auto">
-              <div className="w-2/3 md:w-1/3 aspect-[2/3] overflow-hidden">
-                <Image src={SliderImg11} alt="image" className="w-full h-full object-cover" />
+              <div className="w-2/3 md:w-1/3 overflow-hidden" style={{ aspectRatio: "2 / 3" }}>
+                <Image
+                  src={SliderImg11}
+                  alt="image"
+                  className="object-cover w-full h-full"
+                />
               </div>
               <div className="hidden md:block w-1/3 aspect-[2/3] overflow-hidden">
                 <Image src={SliderImg12} alt="image" className="w-full h-full object-cover" />

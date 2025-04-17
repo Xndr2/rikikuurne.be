@@ -20,7 +20,7 @@ const categories = [
     images: [SliderImg1, SliderImg2, SliderImg3]
   },
   {
-    name: "Hout Schilderijen",
+    name: "Schilderijen Hout",
     images: [SliderImg4, SliderImg5, SliderImg6]
   },
   {

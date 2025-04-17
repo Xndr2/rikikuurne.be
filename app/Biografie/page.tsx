@@ -45,6 +45,8 @@ export default function Bio() {
     { place: "Zwevegem" },
     { place: "Heule" },
     { place: "Drongen" },
+    { place: "Bretagne" },
+    { place: "Kortemark" },
   ]
 
   return (

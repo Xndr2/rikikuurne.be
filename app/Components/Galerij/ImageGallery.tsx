@@ -78,7 +78,9 @@ const ImageGallery: React.FC<Props> = ({ folders }) => {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
               {folder.images.map((image) => {
                 const { projectName, height, width } = extractDetails(image);
+                const upperProjectName = projectName[0].toUpperCase() + projectName.substring(1);
                 const isVisible = visibleImages.has(image);
+                const putMessurements = (height != "0");
 
                 return (
                   <div
@@ -101,8 +103,10 @@ const ImageGallery: React.FC<Props> = ({ folders }) => {
                         blurDataURL="data:image/png;base64,..." // Replace with actual base64 blurred image
                       />
                     )}
-                    <p className="text-sm font-semibold text-gray-800 mt-2">{projectName}</p>
-                    <p className="text-sm text-gray-600">{height}cm x {width}cm</p>
+                    <p className="text-sm font-semibold text-gray-800 mt-2">{upperProjectName}</p>
+                    {putMessurements && (
+                      <p className="text-sm text-gray-600">{height}cm x {width}cm</p>
+                    )}
                   </div>
                 );
               })}

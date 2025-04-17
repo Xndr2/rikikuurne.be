@@ -68,7 +68,9 @@ const ImageGallery: React.FC<Props> = ({ folders }) => {
           className="border border-gray-300 rounded-lg p-4 mb-4 bg-white shadow-md transition duration-300 ease-in-out hover:shadow-xl will-change-transform"
         >
           <button
-            className="w-full text-xl font-bold text-gray-700 py-3 px-5 rounded-lg bg-gray-50 text-left transition duration-200 ease-in-out hover:bg-gray-200 hover:text-gray-900"
+            className={`w-full text-xl font-bold text-gray-700 py-3 px-5 rounded-lg bg-gray-50 text-left transition duration-200 ease-in-out hover:bg-gray-200 hover:text-gray-900 ${
+              openFolders[folder.name] ? 'sticky top-0 z-10' : ''
+            }`}
             onClick={() => toggleFolder(folder.name)}
           >
             {folder.name} {openFolders[folder.name] ? "✕" : ""}

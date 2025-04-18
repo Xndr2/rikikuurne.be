@@ -11,7 +11,6 @@ export default function WorkText() {
                 "publicitaire ontwerpen",
                 "stripverhalen",
                 "cartoons",
-                "karikaturen",
                 "pentekeningen",
             ]
         },

@@ -183,11 +183,11 @@ const ImageCarousel = () => {
         </>
       )}
 
-      {isMobile && (
+      {/* {isMobile && (
         <div className="text-center mt-2 text-sm text-gray-500">
           Sleep voor meer categorieën
         </div>
-      )}
+      )} */}
     </div>
   );
 };

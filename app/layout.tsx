@@ -13,7 +13,7 @@ const montserrat = Montserrat({
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="nl">
       <body className={montserrat.className}>
       <div className="max-w-screen-xl mx-auto px-4 min-h-screen flex flex-col">
         {/* Main content */}

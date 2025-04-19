@@ -56,7 +56,7 @@ const folders = [
         "/Galerij/Beelden hout/Drankkaarthouders-12-15.jpg",
         "/Galerij/Beelden hout/Eendje-13-15.JPG",
         "/Galerij/Beelden hout/Flamingo-67-30.JPG",
-        "/Galerij/Beelden hout/Fluitconcest-50-40.jpg",
+        "/Galerij/Beelden hout/Fluitconcert-50-40.jpg",
         "/Galerij/Beelden hout/Huisjesslak-35-30.JPG",
         "/Galerij/Beelden hout/Invasie-60-25.jpg",
         "/Galerij/Beelden hout/Kaketoe-45-30.JPG",

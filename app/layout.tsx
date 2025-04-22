@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 import AppBgImg from './Components/appBgImage'
 import Footer from './Components/footer'
+import { Analytics } from "@vercel/analytics/react"
 
 import { Montserrat } from 'next/font/google'
 import { Suspense } from 'react'

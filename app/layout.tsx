@@ -24,6 +24,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         
         {/* Footer */}
         <Footer />
+        <Analytics/>
       </div>
       </body>
     </html>

@@ -48,6 +48,8 @@ const folders = [
         "/Galerij/Beelden polystyreen/Twijfelaar-85-80.jpg",
         "/Galerij/Beelden polystyreen/Vergeetmenietje-50-25.jpg",
         "/Galerij/Beelden polystyreen/Zonnekoning-50-40.jpg",
+        "/Galerij/Beelden polystyreen/Kusje-43-18.jpg",
+        "/Galerij/Beelden polystyreen/Bolleboos-40-30.jpg",
       ],
     },
     {

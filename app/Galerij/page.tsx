@@ -17,6 +17,9 @@ const folders = [
     {
       name: "Beelden Polystyreen",
       images: [
+        "/Galerij/Beelden polystyreen/Keikoppen-38-22.jpeg",
+        "/Galerij/Beelden polystyreen/Speelvogel-35-30.jpeg",
+        "/Galerij/Beelden polystyreen/Hartendiefje-50-30.jpeg",
         "/Galerij/Beelden polystyreen/Amazone-78-35.jpg",
         "/Galerij/Beelden polystyreen/Blauwe Rus-25-16.jpg",
         "/Galerij/Beelden polystyreen/Clochard-54-40.jpg",

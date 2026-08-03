@@ -29,15 +29,15 @@ const useIntersectionObserver = (setVisibleImages: React.Dispatch<React.SetState
   }, []);
 };
 
-// Extracts details from image filenames (NAME-W-H.jpg)
+// Extracts details from image filenames (NAME-W-H.jpg, or NAME-W-H-verkocht.jpg for sold works)
 const extractDetails = (filePath: string) => {
   const filename = filePath.split("/").pop() || "";
-  const match = filename.match(/(.+)-(\d+)-(\d+)\.\w+$/);
+  const match = filename.match(/(.+)-(\d+)-(\d+)(-verkocht)?\.\w+$/i);
   if (match) {
-    const [, projectName, height, width] = match;
-    return { projectName, height, width };
+    const [, projectName, height, width, sold] = match;
+    return { projectName, height, width, isSold: Boolean(sold) };
   }
-  return { projectName: "Unknown", height: "Unknown", width: "Unknown" };
+  return { projectName: "Unknown", height: "Unknown", width: "Unknown", isSold: false };
 };
 
 const ImageGallery: React.FC<Props> = ({ folders }) => {
@@ -79,7 +79,7 @@ const ImageGallery: React.FC<Props> = ({ folders }) => {
           {openFolders[folder.name] && (
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
               {folder.images.map((image) => {
-                const { projectName, height, width } = extractDetails(image);
+                const { projectName, height, width, isSold } = extractDetails(image);
                 const upperProjectName = projectName[0].toUpperCase() + projectName.substring(1);
                 const isVisible = visibleImages.has(image);
                 const putMessurements = (height != "0");
@@ -92,18 +92,25 @@ const ImageGallery: React.FC<Props> = ({ folders }) => {
                     className="text-center border border-gray-200 rounded-lg p-2 bg-gray-50 shadow-sm group transition duration-200 ease-in-out hover:shadow-md will-change-transform"
                   >
                     {isVisible && (
-                      <Image
-                        src={image}
-                        alt={projectName}
-                        width={300}
-                        height={180}
-                        className="w-full h-60 object-cover rounded-lg cursor-pointer select-none"
-                        onClick={() => setSelectedImage(image)}
-                        draggable={false}
-                        priority={true}
-                        placeholder="blur"
-                        blurDataURL="data:image/png;base64,..." // Replace with actual base64 blurred image
-                      />
+                      <div className="relative">
+                        <Image
+                          src={image}
+                          alt={projectName}
+                          width={300}
+                          height={180}
+                          className="w-full h-60 object-cover rounded-lg cursor-pointer select-none"
+                          onClick={() => setSelectedImage(image)}
+                          draggable={false}
+                          priority={true}
+                          placeholder="blur"
+                          blurDataURL="data:image/png;base64,..." // Replace with actual base64 blurred image
+                        />
+                        {isSold && (
+                          <span className="absolute top-2 right-2 bg-red-600 text-white text-xs font-semibold uppercase px-2 py-1 rounded-md shadow-md pointer-events-none">
+                            Verkocht
+                          </span>
+                        )}
+                      </div>
                     )}
                     <p className="text-sm font-semibold text-gray-800 mt-2">{upperProjectName}</p>
                     {putMessurements && (

@@ -92,29 +92,25 @@ const ImageGallery: React.FC<Props> = ({ folders }) => {
                     className="text-center border border-gray-200 rounded-lg p-2 bg-gray-50 shadow-sm group transition duration-200 ease-in-out hover:shadow-md will-change-transform"
                   >
                     {isVisible && (
-                      <div className="relative">
-                        <Image
-                          src={image}
-                          alt={projectName}
-                          width={300}
-                          height={180}
-                          className="w-full h-60 object-cover rounded-lg cursor-pointer select-none"
-                          onClick={() => setSelectedImage(image)}
-                          draggable={false}
-                          priority={true}
-                          placeholder="blur"
-                          blurDataURL="data:image/png;base64,..." // Replace with actual base64 blurred image
-                        />
-                        {isSold && (
-                          <span className="absolute top-2 right-2 bg-red-600 text-white text-xs font-semibold uppercase px-2 py-1 rounded-md shadow-md pointer-events-none">
-                            Verkocht
-                          </span>
-                        )}
-                      </div>
+                      <Image
+                        src={image}
+                        alt={projectName}
+                        width={300}
+                        height={180}
+                        className="w-full h-60 object-cover rounded-lg cursor-pointer select-none"
+                        onClick={() => setSelectedImage(image)}
+                        draggable={false}
+                        priority={true}
+                        placeholder="blur"
+                        blurDataURL="data:image/png;base64,..." // Replace with actual base64 blurred image
+                      />
                     )}
                     <p className="text-sm font-semibold text-gray-800 mt-2">{upperProjectName}</p>
                     {putMessurements && (
                       <p className="text-sm text-gray-600">{height}cm x {width}cm</p>
+                    )}
+                    {isSold && (
+                      <p className="text-sm font-semibold text-red-600 uppercase">Verkocht</p>
                     )}
                   </div>
                 );
